@@ -18,8 +18,6 @@ def show():
         print(' ----------------')
     print()
 
-
-
 def ask():
     while True:
         commands = input('        Ваш ход  ').split()
