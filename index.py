@@ -7,7 +7,7 @@ def hi():
     print(' y - номер столбца')
     print('Значение записываете через пробел')
 
-pole = [[" "]* 3 for i in range(3)]
+pole = [[" "] * 3 for i in range(3)]
 def show():
     print()
     print('    | 0 | 1 | 2 | ')
@@ -20,7 +20,7 @@ def show():
 
 def ask():
     while True:
-        commands = input('        Ваш ход  ').split()
+        commands = input('        Ваш ход \n ').split()
 
         if len(commands) != 2:
             print(' Введите 2 координаты! ')
@@ -52,10 +52,10 @@ def check_win():
         symvols = []
         for c in cord:
             symvols.append(pole[c[0]][c[1]])
-            if symvols == ["X","X","X"]:
+            if symvols == ["X", "X", "X"]:
                 print('Выиграл X!!!')
                 return True
-            if symvols == ["0","0","0"]:
+            if symvols == ["0", "0", "0"]:
                 print('Выиграл 0!!!')
                 return True
     return False
